@@ -1,17 +1,17 @@
 html {
   background: #eee;
 }
-.all-animals {
+#animals {
   display: flex;
   flex-wrap: wrap;
 }
-.all-animals section {
+#animals section {
   display: flex;
   flex-direction: column;
   background: #fff;
   margin: 5px;
 }
-.all-animals section .img-wrap {
+#animals section .img-wrap {
   display: flex;
   flex-direction: column;
   border: 1px solid #000;
@@ -19,7 +19,7 @@ html {
   width: 200px;
   overflow: hidden;
 }
-.all-animals section .img-wrap img {
+#animals section .img-wrap img {
   width: 100%;
   flex-shrink: 0;
   flex-basis: min-content;
