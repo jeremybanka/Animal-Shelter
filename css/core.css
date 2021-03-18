@@ -1,14 +1,26 @@
 html {
   background: #eee;
 }
-
-section.all-animals > section {
+.all-animals {
+  display: flex;
+  flex-wrap: wrap;
+}
+.all-animals section {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   margin: 5px;
 }
-
-.all-animals section img {
+.all-animals section .img-wrap {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #000;
-  height: 200px;
+  height: 160px;
   width: 200px;
+  overflow: hidden;
+}
+.all-animals section .img-wrap img {
+  width: 100%;
+  flex-shrink: 0;
+  flex-basis: min-content;
 }
